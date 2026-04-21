@@ -62,8 +62,8 @@ This script requires:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/DeanAmiridis/VisionCSV-Local_AI.git
+cd VisionCSV-Local_AI
 ```
 
 ### 2. Create and activate a virtual environment (recommended)
