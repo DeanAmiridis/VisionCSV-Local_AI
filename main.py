@@ -49,6 +49,6 @@ def extract_csv_from_image(image_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python ollama_to_csv.py <screenshot.png>")
+        print("Usage: python main.py <screenshot.png>")
     else:
         extract_csv_from_image(sys.argv[1])
