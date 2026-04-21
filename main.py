@@ -3,17 +3,18 @@ import sys
 import re
 from pathlib import Path
 
+
 def extract_csv_from_image(image_path):
-    MODEL = "qwen2.5vl:7b" 
+    MODEL = "qwen2.5vl:7b"
     
     print(f"--- Processing {image_path} with {MODEL} ---")
 
     prompt = """
-    Extract the table from this image into a 1:1 CSV format. 
+    Extract the table from this image into a 1:1 CSV format.
     - Use commas as delimiters.
     - Preserving the exact column headers and row data.
-    - Return ONLY the raw CSV content. 
-    - Do not include any conversational text, markdown code blocks, or explanations.
+    - Return ONLY the raw CSV content.
+    - Don't include any conversational text, md code blocks, or explanations.
     """
 
     try:
@@ -35,7 +36,6 @@ def extract_csv_from_image(image_path):
         output_file = Path(image_path).stem + ".csv"
         with open(output_file, "w") as f:
             f.write(csv_data)
-        
         print(f"Done! File saved as: {output_file}")
 
     except Exception as e:
