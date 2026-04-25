@@ -1,3 +1,4 @@
+"""Extract table data from images and save as CSV using a local Ollama vision model."""
 import argparse
 import logging
 import re
@@ -73,7 +74,10 @@ def extract_csv_from_image(image_path: str, model: str, output_dir: Path) -> boo
 def main():
     """Parse arguments and process image files."""
     parser = argparse.ArgumentParser(
-        description="Extract table data from images and save as CSV using a local Ollama vision model."
+        description=(
+            "Extract table data from images and save as CSV "
+            "using a local Ollama vision model."
+        )
     )
     parser.add_argument("images", nargs="+", help="Image file(s) to process")
     parser.add_argument(
