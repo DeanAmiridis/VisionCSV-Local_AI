@@ -9,7 +9,7 @@ import ollama
 
 
 SUPPORTED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
-DEFAULT_MODEL = "qwen2.5vl:7b"
+DEFAULT_MODEL = "qwen3-vl:8b"
 
 PROMPT = (
     "Extract the table from this image into a 1:1 CSV format. "
