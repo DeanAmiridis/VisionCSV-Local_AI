@@ -38,7 +38,7 @@ sales-report.csv
 The script is currently configured to use:
 
 ```python
-qwen2.5vl:7b
+qwen3-vl:8b-instruct
 ```
 
 You can change that in the script by editing the `MODEL` variable inside `extract_csv_from_image()`.
@@ -101,7 +101,7 @@ ollama --version
 ### 5. Pull the required model
 
 ```bash
-ollama pull qwen2.5vl:7b
+ollama pull qwen3-vl:8b-instruct
 ```
 
 ## Usage
